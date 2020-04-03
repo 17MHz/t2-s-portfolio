@@ -1,0 +1,423 @@
+@charset "UTF-8";
+
+html{
+  font-size: 100%;
+  height: 100%;
+}
+
+body{
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "sans-serif";
+  margin: 0;
+  height: 100%;
+}
+
+.main{
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/main.jpeg);
+  background-size: cover;
+  background-color: rgba(255,255,255,0.25);
+  background-blend-mode:lighten
+}
+
+a{
+  text-decoration: none;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.top-header{
+  position: relative;
+  background-color: rgba(255,255,255,0);
+
+}
+
+.nav{
+  display: flex;
+  margin-right: 50px;
+}
+
+.nav li{
+  margin-top: 15px;
+  margin-left: 45px;
+  font-size: 20px;
+  list-style: none;
+}
+
+.title a{
+    color: #000;
+}
+
+.nav a{
+    color: #000;
+}
+
+.nav a:hover{
+    transition: 0.25s;
+    color: #797979;
+}
+
+.title{
+  margin-left: 50px;
+}
+
+.top{
+  margin: 150px auto;
+  text-align: center;
+}
+
+.profile, .picture, .music, .app, .link{
+  margin-top: 120px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: left;
+}
+
+.profile-contents, .apps{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.profile-contents img{
+  width: 200px;
+  height: auto;
+  margin-right: 50px;
+}
+
+.picture-sub{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.picture-subtitle{
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+
+.pictures{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.picture-unit{
+  padding: 5px;
+  text-align: center;
+}
+
+.picture-unit p{
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.picture-unit img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  transition: 0.25s;
+  box-shadow: 2.5px 2.5px 5px 5px rgba(0,0,0,0.4);
+}
+
+.picture-unit img:hover{
+  transform: scale(1.1, 1.1);
+  transition: 0.25s;
+}
+
+.blank{
+  width: 100%;
+  height: 100px;
+}
+
+.music-list{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.music-list iframe{
+  margin-bottom: 30px;
+}
+
+.apps{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.apps img{
+  margin-bottom: 20px;
+  width: 300px;
+  height: auto;
+  margin-right: 50px;
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.4);
+}
+
+.apps-desc a{
+  color: #000;
+}
+
+.apps-desc a:hover{
+  transition: 0.25s;
+  color: #797979;
+}
+
+.links{
+  margin-top: 50px;
+}
+
+footer{
+  margin: 0;
+  width: 100%;
+  bottom: 0;
+  background-color: #000;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.copyright{
+  margin: 0;
+  padding: 25px 0;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px){
+
+  .main{
+      height: 750px;
+  }
+
+  header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+  }
+
+  .top-header{
+    background-color: rgba(255,255,255,0);
+  }
+  .title{
+    font-size: 50px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  nav {
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    background-color: rgba(75, 75, 75, 0.3);
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-bottom: 15px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .nav li {
+    display: block;
+    margin-left: 50px;
+    font-size: 20px;
+    list-style: none;
+  }
+
+  .profile, .music, .picture, .app, .link{
+    margin-top: 180px;
+    margin-bottom: 80px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  h2{
+    text-align: center;
+  }
+
+  .profile-contents, .apps{
+    display: block;
+  }
+
+  .profile-contents p{
+    font-size: 15px;
+  }
+
+  .profile-contents img{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .picture{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .pictures-over{
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+  }
+
+  .pictures{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .picture-unit{
+    margin-left: 20px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .picture-unit p{
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .picture-unit img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: 0.25s;
+    box-shadow: 2.5px 2.5px 5px 5px rgba(0,0,0,0.4);
+  }
+
+  .apps-desc{
+    width: 100%;
+  }
+
+  .apps{
+  }
+
+  .apps-desc p{
+    font-size: 12px;
+  }
+
+  .apps img{
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.4);
+  }
+
+  footer{
+    background-color: #000;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+  }
+
+  .copyright{
+    margin: 0 auto;
+
+    color: #fff;
+  }
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 1024px){
+
+  .top{
+    margin: 50px auto;
+  }
+
+  header h1{
+    font-size: 20px;
+    margin-top: 25px;
+  }
+
+  .nav li {
+    display: block;
+    margin-left: 30px;
+    font-size: 20px;
+    list-style: none;
+  }
+
+  .profile-contents p{
+    font-size: 10px;
+  }
+
+  .profile-contents img{
+    width: 25%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .pictures-over{
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+  }
+
+  .pictures{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .picture-unit{
+    margin-left: 20px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .picture-unit p{
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .picture-unit img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: 0.25s;
+    box-shadow: 2.5px 2.5px 5px 5px rgba(0,0,0,0.4);
+  }
+
+  .apps-desc h3{
+    margin-top: 0;
+  }
+
+
+  .apps p{
+    font-size: 12px;
+  }
+
+  .apps img{
+    width: 50%;
+    margin-left: 30px;
+    margin-right: 0;
+  }
+
+  .nav li{
+    font-size: 15px;
+  }
+
+}
