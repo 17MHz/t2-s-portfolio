@@ -28,7 +28,9 @@ header{
   position: fixed;
   width: 100%;
   top: 0;
+  display:-webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
   background-color: #fff;
   z-index: 2;
@@ -41,6 +43,7 @@ header{
 }
 
 .nav{
+  display:-webkit-box;
   display: flex;
   margin-right: 50px;
 }
@@ -82,8 +85,11 @@ header{
 }
 
 .profile-contents, .apps{
+  display:-webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: start;
   align-items: flex-start;
 }
 
@@ -104,6 +110,7 @@ header{
 }
 
 .pictures{
+  display:-webkit-box;
   display: flex;
   justify-content: space-around;
   padding-top: 10px;
@@ -228,7 +235,9 @@ footer{
   }
 
   .nav {
+    display:-webkit-box;
     display: flex;
+    -webkit-box-pack: justify;
     justify-content: space-between;
     padding-left: 0;
     padding-bottom: 15px;
@@ -281,7 +290,9 @@ footer{
   }
 
   .pictures{
+    display:-webkit-box;
     display: flex;
+    -webkit-box-pack: justify;
     justify-content: space-between;
     padding-top: 10px;
     padding-bottom: 20px;
@@ -376,7 +387,9 @@ footer{
   }
 
   .pictures{
+    display:-webkit-box;
     display: flex;
+    -webkit-box-pack: justify;
     justify-content: space-between;
     padding-top: 10px;
     padding-bottom: 20px;
